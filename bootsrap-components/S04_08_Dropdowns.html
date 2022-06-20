@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Dropdowns</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <header>
+      <h1 class="text-center display-3">
+        <strong>Bootstrap Components</strong>
+      </h1>
+      <h1 class="text-center display-1">
+        <strong>Dropdowns</strong>
+      </h1>
+    </header>
+
+    <div class="container">
+      <!--todo: Examples  -->
+
+      <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
+
+      <div class="card m-3 p-2 d-flex flex-row">
+        <div class="card">
+          <h2 class="display-6 mt-5"><small>1.1</small> Single button</h2>
+          <!-- dropdown -->
+          <div class="">
+            <!-- dropdown-toggle -->
+            <button
+              class="btn btn-secondary"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown button
+            </button>
+            <!-- dropdown-menu -->
+            <ul class="" aria-labelledby="dropdownMenuButton1">
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Action</a></li>
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Another action</a></li>
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- todo: dropdown using < a > tag -->
+        <div class="card">
+          <h2 class="display-6 mt-5">
+            <small>1.2</small> And with < a > elements:
+          </h2>
+          <!-- dropdown -->
+          <div class="dropdown">
+            <!-- dropdown-toggle &  role="button"-->
+            <a
+              class="btn btn-secondary"
+              href="#"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <!-- dropdown-menu -->
+            <ul class="" aria-labelledby="dropdownMenuLink">
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Action</a></li>
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Another action</a></li>
+              <!-- dropdown-item -->
+              <li><a class="" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--The best part is you can do this with any button variant, too: -->
+        <!-- btn-group -->
+        <div class="">
+          <!-- dropdown-toggle -->
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Action
+          </button>
+          <!-- dropdown-menu -->
+          <ul class="">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <!--todo: Split button -->
+
+        <!-- Example split danger button -->
+        <!-- btn-group -->
+        <div class="">
+          <button type="button" class="btn btn-danger">Action</button>
+          <!-- dropdown-toggle dropdown-toggle-split -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <!--visually-hidden  -->
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+
+          <!-- dropdown-menu -->
+          <ul class="dropdown-menu">
+            <!-- dropdown-item -->
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--todo: Sizing  -->
+
+      <h2 class="display-4 mt-5"><small>2.</small>Sizing</h2>
+
+      <div class="container">
+        <!-- Large button groups (default and split) -->
+        <!-- btn-group -->
+        <div class="">
+          <!-- btn-lg -->
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Large button
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- btn-lg -->
+          <button class="btn btn-secondary" type="button">
+            Large split button
+          </button>
+          <!-- btn-lg -->
+          <button
+            type="button"
+            class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+        <!-- Small buttons -->
+
+        <div class="btn-group">
+          <!-- btn-sm -->
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Small button
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+        <div class="btn-group">
+          <!-- btn-sm -->
+          <button class="btn btn-secondary" type="button">
+            Small split button
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-warning dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </div>
+      </div>
+
+      <!--todo: Dark dropdowns  -->
+
+      <h2 class="display-4 mt-5"><small>3.</small>Dark dropdowns</h2>
+
+      <div class="container">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <!-- dropdown-menu-dark -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--todo: Dropdown direction  -->
+
+      <h2 class="display-4 mt-5"><small>4.</small>Dropdown direction</h2>
+
+      <div class="container">
+        <!--todo: Dropdown menus above< -->
+        <h2 class="display-6 mt-5"><small>4.1</small>Dropdown menus above</h2>
+
+        <!-- ! You can Opt into darker dropdowns to match a dark navbar or custom style by adding .dropdown-menu-dark onto an existing .dropdown-menu. No changes are required to the dropdown items. -->
+
+        <!-- Default dropup button -->
+        <div class="btn-group dropup">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropup
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+            <!-- Dropdown menu links -->
+          </ul>
+        </div>
+
+        <!-- Split dropup button -->
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-secondary">Split dropup</button>
+          <button
+            type="button"
+            class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+          </ul>
+        </div>
+
+        <!--todo: Dropdown right< -->
+        <h2 class="display-6 mt-5"><small>4.1</small>Dropdown right</h2>
+
+        <!-- Default dropend button -->
+        <div class="btn-group dropend">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropright
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+          </ul>
+        </div>
+
+        <!-- Split dropend button -->
+        <div class="btn-group dropend">
+          <button type="button" class="btn btn-secondary">Split dropend</button>
+          <button
+            type="button"
+            class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropright</span>
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+          </ul>
+        </div>
+
+        <!--todo: Dropdown left< -->
+        <h2 class="display-6 mt-5"><small>4.1</small>Dropdown left</h2>
+
+        <!-- Default dropstart button -->
+        <!-- dropstart -->
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropstart
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a class="dropdown-item active" href="#">Action</a></li>
+          </ul>
+        </div>
+
+        <!-- Split dropstart button -->
+        <div class="btn-group">
+          <!-- dropstart -->
+          <div class="btn-group" role="group">
+            <button
+              type="button"
+              class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="visually-hidden">Toggle Dropstart</span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-secondary">
+            Split dropstart
+          </button>
+        </div>
+      </div>
+
+      <!--? Container End -->
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="stick-bottom mt-5 p-4 bg-dark text-center fs-1">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/c/MenyhartMedia" target="_blank"
+            ><i class="bi bi-youtube text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.facebook.com/NB2Menyhart/c/MenyhartMedia"
+            target="_blank"
+            ><i class="bi bi-facebook text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.twitter.com/NBMenyhart" target="_blank"
+            ><i class="bi bi-twitter text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.instagram.com/menyhart_b_norbert/"
+            target="_blank"
+            ><i class="bi bi-instagram text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.linkedin.com/in/dipl-eng-menyhart-norbert"
+            target="_blank"
+            ><i class="bi bi-linkedin text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.volere.life/web-development/web-dev-courses/"
+            target="_blank"
+            ><i class="bi bi-globe text-white"></i
+          ></a>
+        </li>
+      </ul>
+      <h6 class="text-muted">Copyright &copy; 2021 Menyhart Media</h6>
+    </footer>
+    <!-- Bootstrap JavaScript CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

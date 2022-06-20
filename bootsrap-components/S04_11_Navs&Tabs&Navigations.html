@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Navbar</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <header>
+      <h1 class="text-center display-3">
+        <strong>Bootstrap Components</strong>
+      </h1>
+      <h1 class="text-center display-1">
+        <strong>Navbar</strong>
+      </h1>
+    </header>
+
+    <div class="container">
+      <!--todo: Progress  -->
+
+      <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
+
+      <div class="card m-3 p-2">
+        <!-- navbar navbar-expand-lg -->
+        <nav class="navbar-light bg-light">
+          <div class="container-fluid">
+            <!-- .navbar-brand  -->
+            <a class="text-primary" href="#">Menyhart-Media</a>
+            <!-- .navbar-toggler  -->
+            <button
+              class=""
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!-- navbar-toggler-icon -->
+              <span class=""></span>
+            </button>
+            <!-- collapse & navbar-collapse-->
+            <div class="" id="navbarSupportedContent">
+              <!-- .navbar-nav  -->
+              <ul class="me-auto mb-2 mb-lg-0">
+                <!-- nav-item -->
+                <li class="">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Disabled</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--todo: Color schemes  -->
+
+      <h2 class="display-4 mt-5"><small>2.</small>Color schemes</h2>
+
+      <div class="card m-3 p-2">
+        <!--  navbar-dark bg-dark -->
+        <nav class="navbar m-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar dark</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- navbar-dark bg-primary -->
+        <nav class="navbar m-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar primary</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- navbar-light with specific color -->
+        <nav class="navbar m-2" style="background-color: #e3f2fd">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar custom color</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar container</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!--todo: Placement  -->
+
+      <h2 class="display-4 mt-5"><small>3.</small>Placement</h2>
+
+      <div class="card m-3 p-2">
+        <!-- default -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Default</a>
+          </div>
+        </nav>
+        <!-- fixed-top  -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed top</a>
+          </div>
+        </nav>
+        <!--fixed-bottom  -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+          </div>
+        </nav>
+        <!--sticky-top  -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sticky top</a>
+          </div>
+        </nav>
+      </div>
+      <!--? Container End -->
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="stick-bottom mt-5 p-4 bg-dark text-center fs-1">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/c/MenyhartMedia" target="_blank"
+            ><i class="bi bi-youtube text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.facebook.com/NB2Menyhart/c/MenyhartMedia"
+            target="_blank"
+            ><i class="bi bi-facebook text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.twitter.com/NBMenyhart" target="_blank"
+            ><i class="bi bi-twitter text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.instagram.com/menyhart_b_norbert/"
+            target="_blank"
+            ><i class="bi bi-instagram text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.linkedin.com/in/dipl-eng-menyhart-norbert"
+            target="_blank"
+            ><i class="bi bi-linkedin text-white"></i
+          ></a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://www.volere.life/web-development/web-dev-courses/"
+            target="_blank"
+            ><i class="bi bi-globe text-white"></i
+          ></a>
+        </li>
+      </ul>
+      <h6 class="text-muted">Copyright &copy; 2021 Menyhart Media</h6>
+    </footer>
+    <!-- Bootstrap JavaScript CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </body>
+</html>
