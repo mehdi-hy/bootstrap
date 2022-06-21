@@ -40,14 +40,28 @@
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <!-- accordion-header & id="headingOne"-->
-            <h2 class="">
+            <h2 class="accordion-header" id="headingOne">
               <!-- Accordion toggle button -->
-              <button>Accordion Item #1</button>
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapseOne"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
             </h2>
             <!-- Item to be toggled by the button -->
-            <div class="">
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
               <!-- accordion-body -->
-              <div class="">
+              <div class="accordion-body">
                 <strong>This is the first item's accordion body.</strong> It is
                 shown by default, until the collapse plugin adds the appropriate
                 classes that we use to style each element. These classes control
@@ -61,9 +75,9 @@
             </div>
           </div>
           <!-- accordion-item -->
-          <div class="">
+          <div class="accordion-item">
             <!-- accordion-header & id="headingTwo"-->
-            <h2 class="">
+            <h2 class="accordion-header" id="headingTwo">
               <!-- accordion-button collapsed -->
               <button
                 class="accordion-button"
